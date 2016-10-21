@@ -2043,8 +2043,9 @@ body {
   background: #6f1915; }
 
 .photo {
-  background: url(../img/3.jpg) center center no-repeat;
-  background-size: cover; }
+  background: url(../img/3.jpg) top center no-repeat;
+  background-size: cover;
+  height: 100%; }
 
 ul {
   padding: 0;
