@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Project 1: Meetup Planner</title>
+      <link rel="stylesheet" href="http://fonts.googleapis.com/icon?family=Material+Icons">      
+      <link rel="stylesheet" href="css/materialize.min.css"  media="screen,projection">
+    </head>
+
+    <body class="photo">
+      <div class="container">
+        <div class="section">
+          <div class="row">
+            <form class="col s4 offset-s4">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-title center-align">Log in</div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">email</i>
+                      <input id="email" type="email" class="validate" required>
+                      <label for="email" data-error="Error" data-success="Success">Email *</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12">
+                      <i class="material-icons prefix">https</i>
+                      <input id="password" type="password" class="validate" required>
+                      <label for="password" data-error="Error" data-success="Success">Password *</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12 center-align">
+                      <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Submit
+                        <i class="material-icons right">send</i>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s12 center-align">
+                      Don't have an account yet?
+                      <a href="registre.html">Create one now!</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="js/bin/materialize.min.js"></script>
+
+      <script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyCfTgaPr77TMXb5LuRl-fKhL6cdQwE4V2o",
+          authDomain: "friendlychat-c4cae.firebaseapp.com",
+          databaseURL: "https://friendlychat-c4cae.firebaseio.com",
+          storageBucket: "friendlychat-c4cae.appspot.com",
+          messagingSenderId: "515914339279"
+        };
+        firebase.initializeApp(config);
+      </script>
+      
+    </body>
+  </html>
+        
