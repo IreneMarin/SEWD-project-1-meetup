@@ -26,7 +26,7 @@ First project from the Senior Web Developer Nanodegree in <a target="_blank" hre
 
 1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights and Chrome DevTools!
 
-Or you can open it in this link: <a href="https://irenemarin.github.io/SEWD-project-1-meetup/app/login.html" target="_blank">Meetup Planner</a>
+Or you can open it in this link: <a href="http://irene.marin.cat/udacity/send-project1/app/login.html" target="_blank">Meetup Planner</a>
 
 --------------------------
 
