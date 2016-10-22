@@ -11,6 +11,13 @@ button:focus {
 label {
   font-size: $label-font-size;
   color: $input-border-color;
+
+  &.event {
+  	font-weight: 400;
+    text-transform: uppercase;
+    font-size: 75%;
+    color: #e68852;
+  }
 }
 
 @import 'input-fields';

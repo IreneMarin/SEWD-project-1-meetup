@@ -1,5 +1,5 @@
 var gulp = require('gulp'),
-	sass = require('gulp-sass'),
+  sass = require('gulp-sass'),
 	cssnano = require('gulp-cssnano'),
 	rename = require('gulp-rename'),
 	notify = require('gulp-notify');
@@ -14,11 +14,11 @@ gulp.task('styles', function() {
   	.pipe(sass().on('error', sass.logError))
 
   	// Put destination of the newly compiled sass 
-  	.pipe(gulp.dest('./css/'))
+  	.pipe(gulp.dest('./app/css/'))
   	.pipe(rename({suffix: '.min'}))
   	.pipe(cssnano())
-  	.pipe(gulp.dest('./css/'))
-  	.pipe(notify({message: 'Styles task complete'}));
+  	.pipe(gulp.dest('./app/css/'))
+  	.pipe(notify({message: 'Materialize task complete'}));
 });
 
 // Watch task

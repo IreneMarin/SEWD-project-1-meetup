@@ -12,7 +12,7 @@
       <div class="container">
         <div class="section">
           <div class="row">
-            <form class="col s4 offset-s4">
+            <form class="col s12 m8 offset-m2 l6 offset-l3" method="get" id="form" action="events.html">
               <div class="card">
                 <div class="card-content">
                   <div class="card-title center-align">Log in</div>
@@ -32,7 +32,7 @@
                   </div>
                   <div class="row">
                     <div class="input-field col s12 center-align">
-                      <button class="btn waves-effect waves-light btn-large" type="submit" name="action">Submit
+                      <button class="btn waves-effect waves-light btn-large" id="submit" type="submit" name="action" form="form">Submit
                         <i class="material-icons right">send</i>
                       </button>
                     </div>
@@ -40,7 +40,7 @@
                   <div class="row">
                     <div class="input-field col s12 center-align">
                       Don't have an account yet?
-                      <a href="registre.html">Create one now!</a>
+                      <a href="register.html">Create one now!</a>
                     </div>
                   </div>
                 </div>
@@ -50,21 +50,7 @@
         </div>
       </div>
       <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src="js/bin/materialize.min.js"></script>
-
-      <script src="https://www.gstatic.com/firebasejs/3.5.1/firebase.js"></script>
-      <script>
-        // Initialize Firebase
-        var config = {
-          apiKey: "AIzaSyCfTgaPr77TMXb5LuRl-fKhL6cdQwE4V2o",
-          authDomain: "friendlychat-c4cae.firebaseapp.com",
-          databaseURL: "https://friendlychat-c4cae.firebaseio.com",
-          storageBucket: "friendlychat-c4cae.appspot.com",
-          messagingSenderId: "515914339279"
-        };
-        firebase.initializeApp(config);
-      </script>
-      
+      <script src="js/materialize.min.js"></script>
     </body>
   </html>
         

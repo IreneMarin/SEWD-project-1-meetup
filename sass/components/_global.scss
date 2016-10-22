@@ -413,11 +413,26 @@ thead {
 }
 
 td, th{
-  padding: 15px 5px;
+  padding: 5px;
   display: table-cell;
   text-align: left;
   vertical-align: middle;
   border-radius: 2px;
+}
+
+th {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 75%;
+  width: 30%;
+  padding-right: 20px;
+  text-align: right;
+  color: $secondary-color;
+
+  &.top {
+    vertical-align: top;
+    padding-top: 7px;
+  }
 }
 
 // Responsive Table
@@ -785,4 +800,8 @@ nav ul a span.badge {
 
 .no-padding {
   padding: 0 !important;
+}
+
+.pt8 {
+  padding-top: 8px !important;
 }
