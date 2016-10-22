@@ -79,61 +79,70 @@
                         </div>
                       </li>
                     </ul>
+                    <span style="font-size: 18px; font-weight: 300; padding-right: 10px;">Or create a new one!</span>
                     <a class="waves-effect waves-light btn btn-floating btn-large modal-trigger tooltipped" data-position="right" data-delay="50" data-tooltip="Add an event" href="#modal1">
                       <i class="material-icons">event</i>
                     </a>                  
                 </div>
               </div>
 
-              
-                  
-
               <!-- Modal Structure -->
               <div id="modal1" class="modal">
                 <div class="modal-content">
                   <h4>New event</h4>
                   <div class="row">
+                    <div class="input-field col s6">
+                      <input id="name" type="text" class="validate" required>
+                      <label for="name" data-error="Error" data-success="Success">Name of the event *</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <select>
+                        <option value="" disabled selected>Choose your option</option>
+                        <option value="1">Birthday party</option>
+                        <option value="2">Conference talk</option>
+                        <option value="3">Wedding</option>
+                      </select>
+                      <label for="type" data-error="Error" data-success="Success">Type of the event *</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="host" type="text" class="validate">
+                      <label for="host" data-error="Error" data-success="Success">Event host *</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="location" type="text" class="validate">
+                      <label for="location" data-error="Error" data-success="Success">Location</label>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="input-field col s6">
+                      <input id="start_date" type="datetime-local" class="validate">
+                      <label for="start_date">Event start date and time *</label>
+                    </div>
+                    <div class="input-field col s6">
+                      <input id="end_date" type="datetime-local" class="validate">
+                      <label for="end_date">Event end date and time *</label>
+                    </div>                    
+                  </div>
+                  <div class="row">
                     <div class="input-field col s12">
-                      <input id="email" type="email" class="validate">
-                      <label for="email" data-error="Error" data-success="Success">Name of the event</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="input-field col s6">
-                      <input id="password" type="password" class="validate">
-                      <label for="password" data-error="Error" data-success="Success">Type of the event</label>
-                    </div>
-                    <div class="input-field col s6">
-                      <input id="password" type="password" class="validate">
-                      <label for="password" data-error="Error" data-success="Success">Event host</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="input-field col s6">
-                      <input id="password" type="datetime-local" class="validate">
-                      <label for="password">Event start date and time</label>
-                    </div>
-                    <div class="input-field col s6">
-                      <input id="password" type="datetime-local" class="validate">
-                      <label for="password">Event end date and time</label>
+                      <input id="guests" type="password" class="validate">
+                      <label for="guests" data-error="Error" data-success="Success">Guest list</label>
                     </div>
                   </div>
                   <div class="row">
                     <div class="input-field col s12">
-                      <input id="password" type="password" class="validate">
-                      <label for="password" data-error="Error" data-success="Success">Guest list</label>
+                      <textarea id="description" class="materialize-textarea"></textarea>
+                      <label for="description">Event description</label>
                     </div>
                   </div>
                   <div class="row">
-                    <div class="input-field col s12">
-                      <input id="password" type="password" class="validate">
-                      <label for="password" data-error="Error" data-success="Success">Location</label>
+                    <div class="col s6">
+                       <a href="#!" class="waves-effect waves-light btn">Add <i class="material-icons right">send</i></a>
                     </div>
-                  </div>
-                  <div class="row">
-                    <div class="col s12">
-                       <a href="#!" class="waves-effect waves-light btn btn-large">Add <i class="material-icons right">send</i></a>
-                       <a href="#!" class="modal-action modal-close waves-effect waves-light btn btn-large">Close <i class="material-icons right">close</i></a>
+                    <div class="col s6 right-align">
+                       <a href="#!" class="modal-action modal-close waves-effect waves-light btn-flat">Close <i class="material-icons right">close</i></a>
                     </div>
                   </div>
                 </div>                
@@ -148,7 +157,8 @@
       <script>
         $(document).ready(function(){
           $('.modal-trigger').leanModal();
-        });
+          $('select').material_select();
+        });        
       </script>
     </body>
   </html>
