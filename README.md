@@ -6,12 +6,27 @@ First project from the Senior Web Developer Nanodegree in <a target="_blank" hre
 
 -------------------------
 
-###How to run the application
+### To run the application
 
-Download the repository in your desktop, unzip it and open the "login.html" file, inside the /app/ folder, in your browser to run the project.
+1. Download the /app/ folder in your computer.
+1. To inspect the site on your phone, you can run a local server:
 
-Or you can open it here: Meetup Planner
+  ```bash
+  $> cd /path/to/your-project-folder
+  $> python -m SimpleHTTPServer 8080
+  ```
 
+1. Open a browser and visit localhost:8080.
+1. Download and install [ngrok](https://ngrok.com/) to make your local server accessible remotely:
+
+  ``` bash
+  $> cd /path/to/your-project-folder
+  $> ngrok 8080
+  ```
+
+1. Copy the public URL ngrok gives you and try running it through PageSpeed Insights and Chrome DevTools!
+
+Or you can uopen it in this link: <a href="https://irenemarin.github.io/SEWD-project-1-meetup/app/login.html" target="_blank">Meetup Planner</a>
 
 --------------------------
 
